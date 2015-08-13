@@ -80,7 +80,7 @@
                 opts.callback(obj, current - 1);
             }
         });
-        obj.on('click', 'a.paging-prev', function(){
+        obj.on('click', 'a.paging-next', function(){
             var current = parseInt(obj.children("span.paging-current").text());
             $.fn.paging.html(obj, $.extend(opts, {'current': current + 1}));
             if(typeof opts.callback == 'function'){
