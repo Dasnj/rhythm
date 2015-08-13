@@ -38,7 +38,7 @@
             }
             var start = opts.current - 2, end = opts.current + 2;
             if((start > 1 && opts.current < 4) || opts.current == 1){
-                end++
+                end++;
             }
             if(opts.current > opts.pages - 4 && opts.current >= opts.pages){
                 start--;
