@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .clearfix { overflow: hidden;}
+        .left { width: 50%; float: left;}
+        .right { width: 50%; float: right;}
+    </style>
+</head>
+<body>
+    <h2>表单</h2>
+    <div class="clearfix">
+        <div class="left">
+            <form id="rhythmFrom" ry-data="myFormData">
+                <input type="text" ry-data="xixi">
+                <div>
+                    <select name="select">
+                        <option value="select.1">1</option>
+                        <option value="select.2">2</option>
+                        <option value="select.3">3</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="checkbox" name="checkbox[]" value="checkbox.1">
+                    <input type="checkbox" name="checkbox[]" value="checkbox.2">
+                    <input type="checkbox" name="checkbox[]" value="checkbox.3">
+                </div>
+                <div>
+                    <input type="radio" name="radio" value="radio.1">
+                    <input type="radio" name="radio" value="radio.2">
+                    <input type="radio" name="radio" value="radio.3">
+                </div>
+                <!-- <img src="" alt=""> -->
+            </form>
+        </div>
+        <div class="right">
+            <a href="javascript:;" ry-clear="__all__">清除所有数值</a>
+            <pre ry-data="__all__" ry-json="true" ry-default="{}"></pre>
+        </div>
+    </div>
+    <br>
+    <h2>输出</h2>
+    <span ry-data="xixi"></span>
+    <script src="rhythm.js"></script>
+</body>
+</html>
