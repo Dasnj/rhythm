@@ -13,6 +13,12 @@ rhythm
 
 参考资料
 
-way.js（双向绑定）
+way.js（以way.js为主框架进行扩展更新）
 
-tempo.js（模版引擎）
+跟新列表：
+
+1、input还支持number等多种input类型
+2、修改checkbox值类型，checkbox改为数组
+3、当未取值或取空值或布尔值false，显示值，值类型于表单决定，而不是在数据中删除值
+4、优化循环输出方式，支持table
+5、支持校验，过滤功能
